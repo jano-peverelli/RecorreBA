@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Recorre Buenos Aires</title>
+  <meta name="description" content="Guía cultural de Buenos Aires: paseos, gastronomía, eventos y lugares recomendados." />
+  <link rel="stylesheet" href="/css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="logo">Recorre<span class="accent">BA</span></div>
+    <nav>
+      <ul>
+        <li><a href="/index.html">Inicio</a></li>
+        <li><a href="/pages/paseos.html">Paseos</a></li>
+        <li><a href="/pages/gastronomia.html">Gastronomía</a></li>
+        <li><a href="/pages/lugares.html">Lugares</a></li>
+        <li><a href="/pages/usuario.html"class="active">Mi Cuenta</a></li>
+      </ul>
+    </nav>
+    <form class="search-bar">
+      <input type="text" placeholder="Buscar...">
+      <button type="submit">🔍</button>
+    </form>
+  </header>
+
+        <!-- HERO -->
+  <section class="hero hero-usuario">
+  <div class="hero-text">
+    <h1>Bienvenido a Tu Tuenta</h1>
+    <p>Registrate para tener todos los beneficios de <strong>Recorre BA:</strong></p>
+  </div>
+</section>
+
+
+    <section class="user-forms grid">
+      <!-- Formulario Registro -->
+      <div class="card form-card">
+        <h3>Crear Cuenta</h3>
+        <form action="#" method="post" class="user-form">
+          <label for="reg-name">Nombre</label>
+          <input type="text" id="reg-name" name="name" placeholder="Tu nombre" required>
+
+          <label for="reg-email">Correo electrónico</label>
+          <input type="email" id="reg-email" name="email" placeholder="ejemplo@correo.com" required>
+
+          <label for="reg-password">Contraseña</label>
+          <input type="password" id="reg-password" name="password" placeholder="Contraseña" required>
+
+          <button type="submit" class="btn">Registrarme</button>
+        </form>
+      </div>
+
+      <!-- Formulario Login -->
+      <div class="card form-card">
+        <h3>Iniciar Sesión</h3>
+        <form action="#" method="post" class="user-form">
+          <label for="login-email">Correo electrónico</label>
+          <input type="email" id="login-email" name="email" placeholder="ejemplo@correo.com" required>
+
+          <label for="login-password">Contraseña</label>
+          <input type="password" id="login-password" name="password" placeholder="Contraseña" required>
+
+          <button type="submit" class="btn">Entrar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div>© 2025 Recorre Buenos Aires · Ciudad Autónoma de Buenos Aires</div>
+      <div class="socials">
+        <a href="#" aria-label="Instagram">Instagram</a> ·
+        <a href="#" aria-label="Facebook">Facebook</a> ·
+        <a href="#" aria-label="YouTube">YouTube</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

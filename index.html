@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Recorre Buenos Aires</title>
+  <meta name="description" content="Guía cultural de Buenos Aires: paseos, gastronomía, eventos y lugares recomendados." />
+  <link rel="stylesheet" href="/css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="logo">Recorre<span class="accent">BA</span></div>
+    <nav>
+      <ul>
+        <li><a href="/index.html" class="active">Inicio</a></li>
+        <li><a href="/pages/paseos.html">Paseos</a></li>
+        <li><a href="/pages/gastronomia.html">Gastronomía</a></li>
+        <li><a href="/pages/lugares.html">Lugares</a></li>
+        <li><a href="/pages/usuario.html">Mi Cuenta</a></li>
+      </ul>
+    </nav>
+    <form class="search-bar">
+      <input type="text" placeholder="Buscar...">
+      <button type="submit">🔍</button>
+    </form>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" aria-label="Hero - Recorre Buenos Aires">
+    <div class="hero-overlay">
+      <div class="hero-text">
+        <h1>Recorre <span class="color">Buenos Aires</span><br>de la mejor manera</h1>
+        <p>Te presentamos los mejores paseos, gastronomía, eventos y lugares para descubrir la ciudad.</p>
+        <div class="hero-cta">
+          <a class="btn" href="/pages/paseos.html">Paseos Culturales</a>
+          <a class="btn outline" href="/pages/gastronomia.html">Recorridos Gastronómicos</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EVENTOS PREVIEW -->
+  <section class="events-preview" aria-labelledby="events-title">
+    <h2 id="events-title">Próximos eventos</h2>
+    <div class="event-grid">
+      <article class="event-card">
+        <img src="/img/Parque de la ciudad .jpg" alt="Festival Ciudad BA en Parque Centenario (foto)">
+        <h3>Festival Ciudad BA</h3>
+        <p>12–15 oct · Parque Centenario · Música, ferias y actividades familiares.</p>
+      </article>
+      <article class="event-card">
+        <img src="/img/Noche de los museos .jpg" alt="Noche de los Museos (imagen)">
+        <h3>Noche de los Museos</h3>
+        <p>2 nov · Museos y centros culturales con programación especial nocturna.</p>
+      </article>
+      <article class="event-card">
+        <img src="/img/Feria arte BA.jpg" alt="Feria ArteBA (imagen)">
+        <h3>Feria ArteBA</h3>
+        <p>25–28 nov · La Rural · Lo mejor del arte contemporáneo local e internacional.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- MAPA -->
+  <section class="mapa" aria-label="Mapa Cultural">
+    <h2>Mapa Cultural</h2>
+    <div class="map-container" role="region" aria-label="Mapa interactivo de Buenos Aires">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26267.54530299837!2d-58.4201237!3d-34.6036844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb2e1c0c04e3%3A0x2e56f8b29c79f9b1!2sBuenos%20Aires!5e0!3m2!1ses!2sar!4v1696522332431!5m2!1ses!2sar"
+        width="100%" height="480" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+
+  <!-- RESEÑAS -->
+  <section class="reviews" aria-labelledby="reviews-title">
+    <h2 id="reviews-title">Reseñas y Valoración</h2>
+    <div class="cards">
+      <div class="card review">★★★★★<br><strong>Mariana G.</strong><br>“Excelente propuesta para conocer la ciudad.”</div>
+      <div class="card review">★★★★☆<br><strong>Lucas P.</strong><br>“Muy útil y claro. Buenas recomendaciones gastronómicas.”</div>
+      <div class="card review">★★★★☆<br><strong>Diego A.</strong><br>“Recorridos bien organizados y fáciles de seguir.”</div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter" aria-labelledby="newsletter-title">
+    <h2 id="newsletter-title">Suscribite para recibir novedades</h2>
+    <form action="#" method="post" aria-label="Formulario suscripción">
+      <input type="email" name="email" placeholder="Tu correo electrónico" required>
+      <button type="submit">Suscribirme</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div>© 2025 Recorre Buenos Aires · Ciudad Autónoma de Buenos Aires</div>
+      <div class="socials">
+        <a href="#" aria-label="Instagram">Instagram</a> ·
+        <a href="#" aria-label="Facebook">Facebook</a> ·
+        <a href="#" aria-label="YouTube">YouTube</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
