@@ -94,8 +94,8 @@ nav a.active {
 
 .hero {
   position: relative;
-  height: 55vh;  /* ALTURA REDUCIDA */
-  background: url("/img/Obelisco\ home.jpeg") no-repeat center top/cover;
+  height: 55vh;
+  background: url("img/obelisco-home.jpeg") no-repeat center top/cover;
   display: flex;
   align-items: center;
   padding: 80px 10%;
@@ -104,28 +104,28 @@ nav a.active {
 
 /* PASEOS CULTURALES */
 .hero-paseos {
-  background-image: url("/Img/puente-mujer-1500x610-2023.jpg");
+  background-image: url("img/puente-mujer-1500x610-2023.jpg");
   background-position: center;
   background-size: cover;
 }
 
 /* GASTRONOMÍA */
 .hero-gastro {
-  background-image: url("/Img/recorrido\ gastronomico\ .jpg");
+  background-image: url("img/recorrido-gastronomico.jpg");
   background-position: center;
   background-size: cover;
 }
 
 /* LUGARES RECOMENDADOS */
 .hero-lugares {
-  background-image: url("/Img/ciudad\ de\ bs\ as.jpg");
+  background-image: url("img/ciudad-de-bs-as.jpg");
   background-position: center;
   background-size: cover;
 }
 
 /* USUARIO */
 .hero-usuario {
-  background-image: url("/img/ciudad\ desenfocada.jpg");
+  background-image: url("img/ciudad-desenfocada.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -146,22 +146,21 @@ nav a.active {
   z-index: 2;
   max-width: 650px;
   width: 100%;
-  text-align: left !important;   /* ✔ SOLO ESTE TITULO VA A LA IZQUIERDA */
+  text-align: left !important;
 }
 
 .hero-text h1 {
   font-size: 3.2rem;
   margin-bottom: 15px;
   color: #fff;
-  text-align: left !important;   /* ✔ Mantiene alineación izquierda */
+  text-align: left !important;
 }
 
 .hero-text p {
   font-size: 1.2rem;
   color: #eee;
-  text-align: left !important;   /* ✔ Mantiene alineación izquierda */
+  text-align: left !important;
 }
-
 
 /* =======================================================
    TITULOS Y TEXTOS CENTRADOS
@@ -188,10 +187,6 @@ section {
    SECCIONES – ESPACIOS MEJORADOS
 ======================================================= */
 
-section {
-  padding: 80px 8%;
-}
-
 .section-header {
   margin-bottom: 50px;
 }
@@ -202,7 +197,7 @@ section {
 }
 
 /* =======================================================
-   GRIDS / CARDS – CENTRADOS Y AMPLIOS
+   GRIDS / CARDS
 ======================================================= */
 
 .grid {
@@ -222,194 +217,10 @@ section {
   transition: transform 0.25s;
 }
 
-.card:hover {
-  transform: translateY(-4px);
-}
-
 .card img {
   width: 100%;
   height: 220px;
   object-fit: cover;
-}
-
-.card h3 {
-  margin: 20px;
-  font-size: 1.25rem;
-  text-align: center;
-}
-
-.card p {
-  margin: 0 20px 25px;
-  color: #555;
-  text-align: center;
-  font-size: 1rem;
-}
-
-/* =======================================================
-   EVENTOS PREVIEW
-======================================================= */
-
-.events-preview {
-  text-align: center;
-}
-
-.event-grid {
-  display: grid;
-  gap: 35px;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  justify-content: center;     /* CENTRA LAS FILAS INCOMPLETAS */
-}
-
-.event-card {
-  background: var(--gray);
-  border-radius: 14px;
-  overflow: hidden;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  text-align: center;
-}
-
-.event-card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-.event-card h3 {
-  margin: 18px;
-  font-size: 1.2rem;
-}
-
-.event-card p {
-  margin: 0 18px 22px;
-  color: #444;
-}
-
-.btn {
-  display: inline-block;
-  padding: 12px 25px;
-  background: var(--accent);
-  color: #fff;
-  border-radius: 6px;
-  text-decoration: none;
-  margin-top: 20px;
-  text-align: center;
-}
-
-.btn:hover {
-  background: #0033cc;
-}
-
-/* =======================================================
-   MAPA
-======================================================= */
-
-.mapa {
-  text-align: center;
-  background: var(--gray);
-  padding: 90px 8%;
-}
-
-.map-container {
-  margin-top: 35px;
-  border-radius: 14px;
-  overflow: hidden;
-}
-
-
-/* =======================================================
-   REVIEWS
-======================================================= */
-
-.reviews {
-  text-align: center;
-}
-
-.reviews .cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: center;   /* CENTRA LAS TARJETAS */
-  margin-top: 40px;
-}
-
-.card.review {
-  width: 300px;
-  padding: 26px;
-  background: var(--gray);
-}
-
-/* =======================================================
-   NEWSLETTER
-======================================================= */
-
-.newsletter {
-  background: var(--gray);
-  text-align: center;
-  padding: 90px 8%;
-}
-
-.newsletter form {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 14px;
-  margin-top: 30px;
-}
-
-.newsletter input {
-  width: 300px;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-}
-
-/* =======================================================
-   PÁGINAS INTERNAS – GRIDS CENTRADOS
-======================================================= */
-
-.intro {
-  text-align: center;
-  background: var(--gray);
-  padding: 90px 8%;
-}
-
-.paseos-grid,
-.food-grid,
-.places-grid {
-  display: grid;
-  gap: 40px;
-  padding: 80px 8%;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  justify-content: center;        /* CENTRA FILAS INCOMPLETAS */
-  text-align: center;
-}
-
-.paseos-grid img,
-.food-grid img,
-.places-grid img {
-  height: 220px;
-  border-radius: 10px;
-  width: 100%;
-  object-fit: cover;
-}
-
-/* =======================================================
-   EVENTOS – LISTA COMPLETA
-======================================================= */
-
-.event-list {
-  padding: 80px 8%;
-}
-
-.event-item {
-  padding: 25px 0;
-  border-bottom: 1px solid #ddd;
-  text-align: center;
-}
-
-.event-item h3 {
-  color: var(--accent);
-  margin-bottom: 8px;
 }
 
 /* =======================================================
@@ -422,19 +233,6 @@ footer {
   text-align: center;
   padding: 45px 8%;
   font-size: 0.9rem;
-}
-
-footer a {
-  color: #fff;
-  text-decoration: none;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
-
-footer .socials {
-  margin-top: 12px;
 }
 
 /* =======================================================
