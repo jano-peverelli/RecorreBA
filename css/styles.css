@@ -89,82 +89,77 @@ nav a.active {
 }
 
 /* =======================================================
-   HERO GENERAL – Propiedades base para todos los hero
+   HERO – Ajustado a la izquierda y con menor altura
 ======================================================= */
 
 .hero {
   position: relative;
-  height: 55vh;                    
+  height: 55vh;  /* ALTURA REDUCIDA */
+  background: url("/img/Obelisco\ home.jpeg") no-repeat center top/cover;
   display: flex;
   align-items: center;
   padding: 80px 10%;
   color: #fff;
-  background-position: center top; 
-  background-size: cover;          
-  background-repeat: no-repeat;
 }
 
-/* Overlay oscuro para mejorar la legibilidad del texto */
+/* PASEOS CULTURALES */
+.hero-paseos {
+  background-image: url("/Img/puente-mujer-1500x610-2023.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+/* GASTRONOMÍA */
+.hero-gastro {
+  background-image: url("/Img/recorrido\ gastronomico\ .jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+/* LUGARES RECOMENDADOS */
+.hero-lugares {
+  background-image: url("/Img/ciudad\ de\ bs\ as.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+/* USUARIO */
+.hero-usuario {
+  background-image: url("/img/ciudad\ desenfocada.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
 .hero::before {
   content: "";
   position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: rgba(0, 0, 0, 0.45); /* Oscurece imagen */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.45);
   z-index: 0;
 }
 
 .hero-text {
   position: relative;
-  z-index: 2;                      
+  z-index: 2;
   max-width: 650px;
-  text-align: left;                
+  width: 100%;
+  text-align: left !important;   /* ✔ SOLO ESTE TITULO VA A LA IZQUIERDA */
 }
 
-/* =======================================================
-   HERO ESPECÍFICOS – IMÁGENES RUTADAS (usando ../img/)
-======================================================= */
-
-/* INDEX (HOME) */
-.hero-home {
-  background-image: url("../img/obelisco-home.jpg");
-  background-position: center top;
+.hero-text h1 {
+  font-size: 3.2rem;
+  margin-bottom: 15px;
+  color: #fff;
+  text-align: left !important;   /* ✔ Mantiene alineación izquierda */
 }
 
-/* PASEOS CULTURALES */
-.hero-paseos {
-  background-image: url("../img/puente-mujer-1500x610-2023.jpg");
-}
-
-/* GASTRONOMÍA */
-.hero-gastro {
-  background-image: url("../img/recorrido-gastronomico.jpg");
-}
-
-/* LUGARES RECOMENDADOS */
-.hero-lugares {
-  background-image: url("../img/ciudad-de-bs-as.jpg");
-}
-
-/* USUARIO / MI CUENTA */
-.hero-usuario {   
-  background-image: url("../img/ciudad-desenfocada.jpg");
-}
-
-/* pequeño ajuste responsive para hero */
-@media (max-width: 700px) {
-  .hero {
-    height: 45vh;
-    padding: 40px 6%;
-  }
-
-  .hero-text h1 {
-    font-size: 1.8rem;
-  }
-
-  .hero-text p {
-    font-size: 1rem;
-  }
+.hero-text p {
+  font-size: 1.2rem;
+  color: #eee;
+  text-align: left !important;   /* ✔ Mantiene alineación izquierda */
 }
 
 
@@ -262,7 +257,7 @@ section {
   display: grid;
   gap: 35px;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  justify-content: center;
+  justify-content: center;     /* CENTRA LAS FILAS INCOMPLETAS */
 }
 
 .event-card {
@@ -333,7 +328,7 @@ section {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  justify-content: center;
+  justify-content: center;   /* CENTRA LAS TARJETAS */
   margin-top: 40px;
 }
 
@@ -385,7 +380,7 @@ section {
   gap: 40px;
   padding: 80px 8%;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  justify-content: center;
+  justify-content: center;        /* CENTRA FILAS INCOMPLETAS */
   text-align: center;
 }
 
