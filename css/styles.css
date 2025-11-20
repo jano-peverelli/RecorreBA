@@ -94,8 +94,8 @@ nav a.active {
 
 .hero {
   position: relative;
-  height: 55vh;  /* ALTURA REDUCIDA */
-  background-image: url("../img/obelisco-home.jpeg") no-repeat center top/cover;
+  height: 55vh;
+  background: url("../img/obelisco-home.jpeg") no-repeat center top/cover;
   display: flex;
   align-items: center;
   padding: 80px 10%;
@@ -104,28 +104,28 @@ nav a.active {
 
 /* PASEOS CULTURALES */
 .hero-paseos {
-  background-image: url("/Img/puente-mujer-1500x610-2023.jpg");
+  background-image: url("../img/puente-mujer-1500x610-2023.jpg");
   background-position: center;
   background-size: cover;
 }
 
 /* GASTRONOMÍA */
 .hero-gastro {
-  background-image: url("/Img/recorrido\ gastronomico\ .jpg");
+  background-image: url("../img/recorrido-gastronomico.jpg");
   background-position: center;
   background-size: cover;
 }
 
 /* LUGARES RECOMENDADOS */
 .hero-lugares {
-  background-image: url("/Img/ciudad\ de\ bs\ as.jpg");
+  background-image: url("../img/ciudad-de-bs-as.jpg");
   background-position: center;
   background-size: cover;
 }
 
 /* USUARIO */
 .hero-usuario {
-  background-image: url("/img/ciudad\ desenfocada.jpg");
+  background-image: url("../img/ciudad-desenfocada.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -146,20 +146,20 @@ nav a.active {
   z-index: 2;
   max-width: 650px;
   width: 100%;
-  text-align: left !important;   /* ✔ SOLO ESTE TITULO VA A LA IZQUIERDA */
+  text-align: left !important;
 }
 
 .hero-text h1 {
   font-size: 3.2rem;
   margin-bottom: 15px;
   color: #fff;
-  text-align: left !important;   /* ✔ Mantiene alineación izquierda */
+  text-align: left !important;
 }
 
 .hero-text p {
   font-size: 1.2rem;
   color: #eee;
-  text-align: left !important;   /* ✔ Mantiene alineación izquierda */
+  text-align: left !important;
 }
 
 
@@ -257,7 +257,7 @@ section {
   display: grid;
   gap: 35px;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  justify-content: center;     /* CENTRA LAS FILAS INCOMPLETAS */
+  justify-content: center;
 }
 
 .event-card {
@@ -328,7 +328,7 @@ section {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  justify-content: center;   /* CENTRA LAS TARJETAS */
+  justify-content: center;
   margin-top: 40px;
 }
 
@@ -380,7 +380,7 @@ section {
   gap: 40px;
   padding: 80px 8%;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  justify-content: center;        /* CENTRA FILAS INCOMPLETAS */
+  justify-content: center;
   text-align: center;
 }
 
