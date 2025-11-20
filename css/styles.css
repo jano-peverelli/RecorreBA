@@ -95,7 +95,7 @@ nav a.active {
 .hero {
   position: relative;
   height: 55vh;  /* ALTURA REDUCIDA */
-  background-image: url("../img/Obelisco-home.jpeg") no-repeat center top/cover;
+  background-image: url("../img/obelisco-home.jpeg") no-repeat center top/cover;
   display: flex;
   align-items: center;
   padding: 80px 10%;
